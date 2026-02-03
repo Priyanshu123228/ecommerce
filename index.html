@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>🛍️ Product Listing Page</h1>
+    <p>Sort and Filter Products (Live Page - 2)</p>
+  </header>
+
+  <main class="container">
+
+    <div class="controls">
+      <div class="control-box">
+        <label for="sortSelect">Sort By:</label>
+        <select id="sortSelect">
+          <option value="">-- Select Sorting --</option>
+          <option value="price-asc">Price (Low → High)</option>
+          <option value="price-desc">Price (High → Low)</option>
+          <option value="name-asc">Name (A → Z)</option>
+          <option value="name-desc">Name (Z → A)</option>
+          <option value="rating-asc">Rating (Low → High)</option>
+          <option value="rating-desc">Rating (High → Low)</option>
+        </select>
+      </div>
+
+      <div class="control-box">
+        <label for="categorySelect">Filter By Category:</label>
+        <select id="categorySelect">
+          <option value="all">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Home">Home</option>
+          <option value="Books">Books</option>
+        </select>
+      </div>
+    </div>
+
+    <h2 class="countText" id="countText"></h2>
+
+    <div class="products" id="productContainer"></div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
